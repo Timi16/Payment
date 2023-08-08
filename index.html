@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>Payment Gateway UI</title>
+</head>
+<body>
+  <div class="payment-container">
+    <div class="payment-card">
+      <h1 class="payment-header">Secure Payment</h1>
+      <div class="card-logos">
+        <img src="visa.png" alt="Visa Logo" class="card-logo">
+        <img src="PayPal.png" alt="PayPal Logo" class="card-logo">
+      </div>
+      <div class="input-group">
+        <label for="card-number">Card Number</label>
+        <input type="number" id="card-number" maxlength="16" class="input-field" />
+      </div>
+      <div class="input-group">
+        <label for="expiry-date">Expiry Date (MM/YY)</label>
+        <input type="text" id="expiry-date" maxlength="5" class="input-field" placeholder="MM/YY" />
+      </div>
+      <div class="input-group">
+        <label for="cvv">CVV</label>
+        <input type="text" id="cvv" maxlength="3" class="input-field" />
+      </div>
+      <button id="submit-button" class="submit-button">Pay Now</button>
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
